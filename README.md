@@ -4,7 +4,7 @@ This is an attempt to parse NMEA compatible data received from gps receiver (tes
 
 Use the following scrap of code as a usage example:
 
-QLabel *labelTotalMsgNumber;
+	QLabel *labelTotalMsgNumber;
 	QLabel *labelMsgNumber;
 	QLabel *labelTotalSVinView;
 
@@ -47,8 +47,8 @@ QLabel *labelTotalMsgNumber;
 	QLabel *labelTrueCourse;
 
 
-void MainWindow::parseAndShow(const QByteArray &data)
-{
+	void MainWindow::parseAndShow(const QByteArray &data)
+	{
 	QString dataType = QString(data);
 	QStringList splitted = dataType.split(",");
 
@@ -217,4 +217,4 @@ void MainWindow::parseAndShow(const QByteArray &data)
 			}
 		}
 	}
-}
+	}
